@@ -27,3 +27,5 @@ const App = () => {
 }
 
 export default App;
+
+//저장을 누르면 바로바로 앱에 내가 쓴 코드를 반영할 수 있다.

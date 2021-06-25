@@ -8,7 +8,7 @@ const App = () => {
       <View>
         <Text>Some more text</Text>
         <Image
-          source={{
+          source={{ 
             uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
           }}
           style={{width: 200, height: 200 }}
@@ -16,11 +16,11 @@ const App = () => {
       </View>
       <TextInput
         style={{
-          height: 40,
-          borderColor: 'gray',
-          borderWidth: 1
+          height: 100, // 텍스트 상자의 높이
+          borderColor: 'gray', //테두리 색깔
+          borderWidth: 3 //테두리 너비
         }}
-        defaultValue="hi"
+        defaultValue="hi" // 텍스트 상자에 표시 될 기본 값
       />
     </ScrollView>
   );

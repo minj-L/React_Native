@@ -1,4 +1,6 @@
 //이 App스크립트 자체가 하나의 컴포넌트 이다.
+//컴포넌트 분리하지 않은 상태
+
 import React from 'react'; //React라는 component를 사용하겠다.
 import {SafeAreaView, StyleSheet, TextInput, View, Text} from 'react-native'; 
 //'react-native에서 {}의 컴포넌트를 가져와 사용하겠다.

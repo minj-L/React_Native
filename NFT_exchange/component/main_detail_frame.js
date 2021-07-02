@@ -1,7 +1,7 @@
 //메인 상세정보 frame component
 /*import React from 'react';
 import {StyleSheet, View, Text, Button, TouchableOpacity, TouchableOpacityBase} from 'react-native';
-
+import Timer_main_detail from './component/Timer_main_detail';
 const App = () => {
   return (
     <View style={styles.container}>
@@ -17,7 +17,7 @@ const App = () => {
         </View>
         <View style={styles.cost_colum}>
           <Text style={styles.coust_time_text}>남은 시간</Text>
-          <Text style={styles.coust_time_bold_text}>00:00:00</Text>
+          <Timer_main_detail />
         </View>
       </View>
       <View style={styles.elem}>

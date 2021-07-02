@@ -1,6 +1,7 @@
 //메인 상세정보 frame
 /*import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Timer_nft_info from './component/Timer_nft_info';
 
 const App = () => {
     return(
@@ -23,7 +24,7 @@ const App = () => {
             
             <View style={styles.cost_colum}>
               <Text style={styles.nft_cost}>0.1ETH</Text>
-              <Text style={styles.nft_time}>00:00:00</Text>
+              <Timer_nft_info />
             </View>
         
           
@@ -45,19 +46,21 @@ const styles = StyleSheet.create({
       height: 400,
     },
     cardImageContainer:{
-      backgroundColor: 'black',
+      backgroundColor: 'white',
       alignItems:'center',
       borderTopLeftRadius: 20, //왼쪽 위 테두리만 둥글게
       borderTopRightRadius: 20,
       width: 300,
       height: 250,
-      paddingTop: 15
     },
   
     cardImage: {
       width: 300,
       height: 250,
+      borderTopLeftRadius: 20, //왼쪽 위 테두리만 둥글게
+      borderTopRightRadius: 20,
     },
+    
     nft_Title: {
       color: 'black',
       fontSize: 24,

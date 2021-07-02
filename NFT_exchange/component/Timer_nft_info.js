@@ -1,10 +1,10 @@
-//남은 경매시간을 보여주는 타이머
-/*import React, { useState, useEffect } from 'react';
+//nft_simple_info_frame의 남은 경매시간을 보여주는 타이머
+import React, { useState, useEffect } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import CountDown from 'react-native-countdown-component';
 import moment from 'moment';
 
-const App = () => {
+const Timer_nft_info = () => {
   const [totalDuration, setTotalDuration] = useState(0);
 
   useEffect(() => {
@@ -25,10 +25,9 @@ const App = () => {
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
       <CountDown
-        size={30}
+        size={10}
         until={1000}
-        onFinish={() => alert('Finished')}
-        digitStyle={{backgroundColor: '#FFF'}}
+        digitStyle={{backgroundColor: '#d3d3d3'}}
         digitTxtStyle={{color: '#000'}}
         separatorStyle={{color: '#000'}}
         timeToShow={['H', 'M', 'S']}
@@ -43,10 +42,9 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
+    marginLeft: -93,
+    marginTop: 7,
   },
 });
 
-export default App*/
+export default Timer_nft_info;

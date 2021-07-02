@@ -10,8 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "moment": "2.29.1",
     "react": "17.0.1",
-    "react-native": "0.64.2"
+    "react-native": "0.64.2",
+    "react-native-countdown-component": "2.7.1",
+    "react-native-image-slider-box": "1.0.12",
+    "react-native-stopwatch-timer": "0.0.21"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",

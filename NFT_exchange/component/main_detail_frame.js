@@ -6,28 +6,26 @@ const App = () => {
   return (
     <View style={styles.container}>
       <View style={styles.elem}>
-        <View style={styles.userInfo}>
-          <View style={styles.profile}/>
-          <Text style={styles.name}>hyunji</Text>
-        </View>
+          <View style={styles.user_profile}/>
+          <Text style={styles.user_name}>hyunji</Text>
       </View>
       <Text style={styles.nft_name}>NATURE</Text>
       <View style={styles.elem}>
-        <View style={styles.colum}>
-          <Text style={styles.text}>현재 경매가</Text>
-          <Text style={styles.bold_text}>0.1 ETH</Text>
+        <View style={styles.cost_colum}>
+          <Text style={styles.coust_time_text}>현재 경매가</Text>
+          <Text style={styles.coust_time_bold_text}>0.1 ETH</Text>
         </View>
-        <View style={styles.colum}>
-          <Text style={styles.text}>남은 시간</Text>
-          <Text style={styles.bold_text}>00:00:00</Text>
+        <View style={styles.cost_colum}>
+          <Text style={styles.coust_time_text}>남은 시간</Text>
+          <Text style={styles.coust_time_bold_text}>00:00:00</Text>
         </View>
       </View>
       <View style={styles.elem}>
-          <Text style={styles.text}>10.000원</Text>
+          <Text style={styles.coust_time_text}>10.000원</Text>
       </View>
       <View style={styles.elem}>
         <TouchableOpacity style={styles.button}>
-            <Text style={styles.title}>제안하기</Text>
+            <Text style={styles.button_title}>제안하기</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -38,7 +36,8 @@ const styles = StyleSheet.create({ //원하는 구성 요소들은 여기서 설
   container: {
     flex:1,
   },
-  elem: { //프로필, 이름등을 가지고 있는 한 줄
+  
+  elem: { //프로필, 이름등을 가지고 있는 가로 정렬을 위한 요소
     width: '40%',
     flexDirection: 'row',
     alignItems: 'center',
@@ -46,26 +45,14 @@ const styles = StyleSheet.create({ //원하는 구성 요소들은 여기서 설
     marginTop: 10,
   },
 
-  colum: {
-    width: '100%',
-    flexDirection: 'column',
-    marginTop: 10,
-  },
-
-  profile: { //검정색 원의 프로필
+  user_profile: { //검정색 원의 프로필
     width: 50,
     height: 50,
     borderRadius: 25,
     backgroundColor: 'black',
     marginLeft: 20,
   },
-
-  userInfo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  name: {
+  user_name: {
     fontSize: 20,
     paddingLeft: 20,
   },
@@ -77,16 +64,23 @@ const styles = StyleSheet.create({ //원하는 구성 요소들은 여기서 설
     marginTop: 10,
   },
 
-  text: {
+  cost_colum: {
+    width: '100%',
+    flexDirection: 'column',
+    marginTop: 10,
+  },
+
+  coust_time_text: {
     fontSize: 15,
     marginLeft: 20,
   },
 
-  bold_text: {
+  coust_time_bold_text: {
     fontSize: 35,
     fontWeight: 'bold',
     marginLeft: 20,
   },
+
   button: {
     marginLeft: 20,
     borderRadius: 40,
@@ -95,7 +89,7 @@ const styles = StyleSheet.create({ //원하는 구성 요소들은 여기서 설
     backgroundColor:'#000000',
   },
 
-  title: {
+  button_title: {
     fontSize: 20,
     fontWeight: 'bold',
     color: 'white',
@@ -105,3 +99,4 @@ const styles = StyleSheet.create({ //원하는 구성 요소들은 여기서 설
 });
 
 export default App;*/
+

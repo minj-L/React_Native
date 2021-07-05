@@ -25,10 +25,10 @@ const App = () => {
           <Text style={styles.coust_time_text}>10.000원</Text>
       </View>
       <View style={styles.elem}>
-        <TouchableOpacity style={styles.button}>
-            <Text style={styles.button_title}>제안하기</Text>
-        </TouchableOpacity>
-      </View>
+            <CustomButton
+              button_title={'제안하기'}
+              onPress={() => navigation.navigate('Details')}/>
+       </View>
     </View>
   );
 };

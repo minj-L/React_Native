@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import Timer_main_detail from './component/Timer_main_detail';
+import CustomButton from './component/CustomButton';
 
 function HomeScreen({ navigation }) {
     return (
@@ -27,9 +28,9 @@ function HomeScreen({ navigation }) {
             <Text style={styles.coust_time_text}>10.000원</Text>
         </View>
         <View style={styles.elem}>
-            <Button
-                title="제안하기"
-                onPress={() => navigation.navigate('Details')}/>
+            <CustomButton
+              title={'제안하기'}
+              onPress={() => navigation.navigate('Details')}/>
         </View>
       </View>
     );

@@ -1,4 +1,5 @@
 //메인 상세정보 frame
+
 /*import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Timer_nft_info from './component/Timer_nft_info';

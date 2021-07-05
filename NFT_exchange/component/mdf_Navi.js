@@ -1,3 +1,5 @@
+//메인 상세정보 frame component, Navigator(버튼 전환) 추가 버전
+
 /*import React, { Component } from 'react'
 import {StyleSheet, View, Text, Button, TouchableOpacity, TouchableOpacityBase} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';

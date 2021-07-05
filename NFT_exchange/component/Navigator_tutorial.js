@@ -1,3 +1,5 @@
+//네비게이터 연습한 거
+
 /*import React, { Component } from 'react'
 import {
   Text,

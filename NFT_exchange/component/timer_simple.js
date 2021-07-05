@@ -1,4 +1,6 @@
-//남은 경매시간을 보여주는 타이머 심플한 버전 (초단위 입력)
+/*남은 경매시간을 보여주는 타이머 심플한 버전 (초단위 입력) 
+일단 저장해 둔것 사용 안함*/
+
 /*import React from 'react';
 import { StyleSheet, View} from 'react-native';
 import CountDown from 'react-native-countdown-component';

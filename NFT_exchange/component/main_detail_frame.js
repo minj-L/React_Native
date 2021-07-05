@@ -1,4 +1,5 @@
 //메인 상세정보 frame component
+
 /*import React from 'react';
 import {StyleSheet, View, Text, Button, TouchableOpacity, TouchableOpacityBase} from 'react-native';
 import Timer_main_detail from './component/Timer_main_detail';

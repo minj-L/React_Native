@@ -1,4 +1,5 @@
 //Timer_main_detail의 남은 경매시간을 보여주는 타이머
+
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import CountDown from 'react-native-countdown-component';

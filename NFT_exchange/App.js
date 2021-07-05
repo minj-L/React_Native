@@ -28,7 +28,7 @@ function HomeScreen({ navigation }) {
         </View>
         <View style={styles.elem}>
             <Button
-                title="Go to Details"
+                title="제안하기"
                 onPress={() => navigation.navigate('Details')}/>
         </View>
       </View>

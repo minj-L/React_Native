@@ -4,7 +4,7 @@ import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 export default class Nft_simple_info_cardImage extends Component{
     static defaultProps = {
         title: 'untitled',
-        source: null,
+        source: 'https://thumbs.dreamstime.com/z/transparent-designer-must-have-fake-background-39672616.jpg',
         onPress: () => null,
     }
     constructor(props){
@@ -16,7 +16,7 @@ export default class Nft_simple_info_cardImage extends Component{
             onPress={this.props.onPress}>
             <View style={styles.cardImageContainer}>
                 <Image style={styles.cardImage}
-                    source={{uri:'https://ichi.pro/assets/images/max/724/0*Tsd6bDqynxJN1daI'}}/>
+                    source={this.props.source}/>
             </View>
         </TouchableOpacity>
       )

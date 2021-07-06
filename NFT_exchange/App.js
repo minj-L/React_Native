@@ -5,11 +5,13 @@ import NFT_name from './component/NFT_name';
 import Profile from './component/Profile';
 import Nft_simple_info_costtime from './component/Nft_simple_info_costime';
 
+/*이미지 주소 복사를 해서 링크를 붙여넣는다.*/
 export default class App extends Component{
     render(){
       return(
         <View style={styles.container}>
-          <Nft_simple_info_cardImage />
+          <Nft_simple_info_cardImage 
+             source={{uri:'https://cdn.eyesmag.com/content/uploads/posts/2020/09/29/studio-ghibli-releases-400-free-to-use-images-01-0be601c8-2b4d-41f7-ba3c-f3a1a19697a6.jpg'}}/>
           <View style={styles.cardContainer}>
             <NFT_name 
               title={'NATURE'}

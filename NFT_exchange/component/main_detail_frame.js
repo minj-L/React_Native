@@ -34,6 +34,7 @@ function HomeScreen({ navigation }) {
               onPress={() => navigation.navigate('Details')}/>
         </View>
       </View>
+<<<<<<< HEAD
     );
 }
 
@@ -57,6 +58,18 @@ const App = () => {
         </Stack.Navigator>
         </NavigationContainer>
     );
+=======
+      <View style={styles.elem}>
+          <Text style={styles.coust_time_text}>10.000원</Text>
+      </View>
+      <View style={styles.elem}>
+            <CustomButton
+              button_title={'제안하기'}
+              onPress={() => navigation.navigate('Details')}/>
+       </View>
+    </View>
+  );
+>>>>>>> 4abff8198a71e78d4e2551d502c3e24cbb2e09c4
 };
 
 const styles = StyleSheet.create({ //원하는 구성 요소들은 여기서 설정해줘야 한다.

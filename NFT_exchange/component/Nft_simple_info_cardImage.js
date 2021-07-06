@@ -3,8 +3,13 @@ import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
 
 export default class Nft_simple_info_cardImage extends Component{
     static defaultProps = {
-        title: 'untitled',
-        source: 'https://thumbs.dreamstime.com/z/transparent-designer-must-have-fake-background-39672616.jpg',
+        borderBottomLeftRadius: null,
+        borderBottomRightRadius: null,
+        borderTopLeftRadius: 20, //왼쪽 위 테두리만 둥글게
+        borderTopRightRadius: 20,
+        width: 300,
+        height: 250,
+        source: {uri:'https://ichi.pro/assets/images/max/724/0*Tsd6bDqynxJN1daI'},
         onPress: () => null,
     }
     constructor(props){
@@ -14,10 +19,15 @@ export default class Nft_simple_info_cardImage extends Component{
       return(
         <TouchableOpacity
             onPress={this.props.onPress}>
-            <View style={styles.cardImageContainer}>
-                <Image style={styles.cardImage}
-                    source={this.props.source}/>
-            </View>
+            <Image style={styles.defaultProps}
+                source ={this.props.source}
+                borderBottomLeftRadius = {this.props.borderBottomLeftRadius}
+                borderBottomRightRadius = {this.props.borderBottomRightRadius}
+                borderTopLeftRadius = {this.props.borderTopLeftRadius}
+                borderTopRightRadius = {this.props.borderTopRightRadius}
+                width = {this.props.width}
+                height = {this.props.height}
+                />
         </TouchableOpacity>
       )
     }
@@ -25,9 +35,6 @@ export default class Nft_simple_info_cardImage extends Component{
     
 const styles = StyleSheet.create({
     cardImage: {
-        width: 300,
-        height: 250,
-        borderTopLeftRadius: 20, //왼쪽 위 테두리만 둥글게
-        borderTopRightRadius: 20,
+        
     },
 })

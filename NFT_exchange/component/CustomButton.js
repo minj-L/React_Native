@@ -22,9 +22,9 @@ export default class CustomButton extends Component{
             ]}
             onPress={this.props.onPress}>
                 <Text style={[
-                    styles.title,
+                    styles.button_title,
                     {color: this.props.titleColor}
-                ]}>{this.props.title}</Text>
+                ]}>제안하기</Text>
             </TouchableOpacity>
         )
     }
@@ -37,8 +37,13 @@ const styles = StyleSheet.create({
         width: 140,
         height: 50,
         backgroundColor:'#000000',
-    },
-    title: {
-        fontSize: 15,
-    }
+      },
+    
+      button_title: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: 'white',
+        marginTop: 10,
+        marginLeft: 30
+      }
 })

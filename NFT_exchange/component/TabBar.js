@@ -11,10 +11,14 @@ const TabBar = createMaterialTopTabNavigator({
   First: {
     screen: First,
     navigationOptions: {
-      tabBarLabel: 'First',
+      tabBarLabel: '제안',
       tabBarIcon: ({tintColor}) => (
         <View>
-          <Icon style={[{color: tintColor}]} size={25} name={'ios-home'} />
+          <Icon 
+          style={[{color: tintColor}]} 
+          size={25} 
+          name={'ios-home'} 
+          />
         </View>
       ),
       initialRouteName: 'Home',
@@ -26,7 +30,7 @@ const TabBar = createMaterialTopTabNavigator({
   Second: {
     screen: Second,
     navigationOptions: {
-      tabBarLabel: 'Second',
+      tabBarLabel: '정보',
       tabBarIcon: ({tintColor}) => (
         <View>
           <Icon
@@ -36,46 +40,25 @@ const TabBar = createMaterialTopTabNavigator({
           />
         </View>
       ),
-      activeColor: '#4B0082',
-      inactiveColor: '#226557',
-      barStyle: {backgroundColor: '#B0C4DE'},
-    },
-  },
-  Third: {
-    screen: Third,
-    navigationOptions: {
-      tabBarLabel: 'Third',
-      tabBarIcon: ({tintColor}) => (
-        <View>
-          <Icon
-            style={[{color: tintColor}]}
-            size={25}
-            name={'ios-settings'}
-          />
-        </View>
-      ),
-      activeColor: '#006400',
-      inactiveColor: '#226557',
-      barStyle: {backgroundColor: '#8FBC8F'},
     },
   },
 },
+
 {
-  animationEnabled: true,
-  swipeEnabled: true,
   tabBarOptions: {
-    pressColor: 'black',
-    style: {
-      backgroundColor: 'white',
+    pressColor: 'transparent',
+    style:{
+      backgroundColor: 'black',
+      marginTop: 20,
+      borderRadius: 50,
+      shadowColor: 'transparent',
     },
     indicatorStyle: {
-      backgroundColor: 'black',
+      backgroundColor: null,
     },
-    activeTintColor: '#000',
+    activeTintColor: '#FFF',
     inactiveTintColor: '#d1cece',
-    showLabel: false,
-    showIcon: true,
-  },
+  }
 },
 );
 export default createAppContainer(TabBar);

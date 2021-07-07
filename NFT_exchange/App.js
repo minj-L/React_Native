@@ -1,12 +1,18 @@
-import React from 'react';
-import {SafeAreaView} from 'react-native';
-import TabBar from './component/TabBar';
+import { createMaterialTopTabNavigator, createAppContainer } from "react-navigation"
+import TabBar from "./component/TabBar2"
 
-export default function App() {
-  return (
-    <>
-      <SafeAreaView />
-      <TabBar />
-    </>
-  );
-}
+const App = createMaterialTopTabNavigator({
+  first: {
+    screen: () => null,
+  },
+  second: {
+    screen: () => null,
+  },
+  third: {
+    screen: () => null,
+  }
+}, {
+  tabBarComponent: TabBar2,
+})
+
+export default createAppContainer(App)

@@ -16,11 +16,13 @@ export default class Qrcode extends React.Component {
     render() {
         return (
             <View>
+                <TouchableOpacity onPress={this.props.onPress}> 
                 <Icon style={[
                     {color: this.props.color},
                     {marginLeft: this.props.marginLeft},
                     {marginTop: this.props.marginTop},
-                ]}name="qr-code-outline" size={26} />
+                ]} name="qr-code-outline" size={26} />
+                </TouchableOpacity>
             </View>
 
         );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Image,TextInput,StyleSheet, Text, View ,TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export default class App extends React.Component {
+export default class LoginScreen extends React.Component {
 
   render() {
     return (

@@ -87,7 +87,7 @@ export default class MainScreen extends React.Component {
       }
 
     
-      componentDidMount async () {
+      async componentDidMount () {
         AsyncStorage.setItem('ETH', '80', () => {
             console.log('유저 닉네임 저장 완료')
         });

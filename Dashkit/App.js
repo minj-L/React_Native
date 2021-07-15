@@ -1,28 +1,31 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import Sizing from './component/Sizing';
+import React from 'react'
+import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
+import { ButtonGroup } from './ButtonGroup';
 
-export default function App() {
+
+const App = () => {
+
+  const printButtonLable = (item) => {
+    console.log(item)
+  }
+
   return (
-    <View style={styles.sizingStyle_container}>
-        <View style={styles.sizingStyle_view}>
-            
-        </View>
-    </View>
-  );
+    <SafeAreaView style={{flex: 1}}>
+      <View style={styles.container}>
+        <ButtonGroup
+          buttons={['One', 'Two', 'Three']}
+          doSomethingAfterClick={printButtonLable}
+        />
+      </View>
+    </SafeAreaView>
+  )
 }
 
-
 const styles = StyleSheet.create({
-  sizing_container : {
-      flex : 1,
-      flexDirection : 'row',
-  },
-  sizing_view : {
-      flex :1,
-      width : 100,
-      height : 100,
-      borderRadius : 50,
-      backgroundColor : 'black',
-  },
+  container : {
+    flex : 1,
+    padding: 10,
+  }
 })
+
+export default App;

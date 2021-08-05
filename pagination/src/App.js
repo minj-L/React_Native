@@ -1,7 +1,7 @@
 import React from "react";
 import Navigator from "./components/navigator/Navigator";
+import Home from "../src/components/Home";
 import Page from "./components/pagination/Page";
-import "./App.css";
 
 //실습 1
 export default function App() {
@@ -12,12 +12,16 @@ export default function App() {
 
   return (
     <div className="App">
+      <Navigator />
       <div className="content">
+        <Home />
         <h1>{title}</h1>
         <p>Liked { likes } times</p>
 
         <p>{ 10 }</p>
         <p>{ "hello, ninjas" }</p>
+        <p>{person.name}{person.age}</p>
+        <p>{person.name} {person.age}</p>
         <p>{ [1,2,3,4,5] }</p>
         <p>{ Math.random() * 10 }</p>
 

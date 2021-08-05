@@ -3,6 +3,7 @@ import Navigator from "./components/navigator/Navigator";
 import Page from "./components/pagination/Page";
 import "./App.css";
 
+//실습 1
 export default function App() {
   const title = 'Welcom to the new blog';
   const likes = 50;

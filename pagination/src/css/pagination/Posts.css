@@ -1,0 +1,27 @@
+.Posts {
+    width: 510px;
+    height: 350px;
+    position: fixed;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Posts_title {
+    margin-left: 10px;
+    color: white;
+    font-family: "Jalnan";
+  }
+  
+  .Page {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .Posts_text {
+    color: black;
+    font-family: "Jalnan";
+    text-decoration: none;
+  }

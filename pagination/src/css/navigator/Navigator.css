@@ -1,0 +1,27 @@
+.Nav {
+    width: 710px;
+    height: 50px;
+    /* position: fixed; */
+    background-color: papayawhip;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Nav_title {
+    margin-left: 10px;
+    color: rgb(141, 160, 141);
+    font-family: "Jalnan";
+  }
+  
+  .Navi {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .Navs {
+    color: black;
+    font-family: "Jalnan";
+    text-decoration: none;
+  }

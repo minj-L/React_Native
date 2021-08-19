@@ -2,6 +2,7 @@ import React from "react";
 import Navigator from "./components/navigator/Navigator";
 import Home from "../src/components/Home";
 import Page from "./components/pagination/Page";
+import firebase from "./firebase";
 
 //실습 1
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
   const likes = 50;
   const person = { name: 'minjj', age: 30};
   const link = "http://www.google.com"
-
+  console.log(firebase);
   return (
     <div className="App">
       <Navigator />
